@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- importar fontes do google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+    <!--importar o carrossel css-->
+    <link rel="stylesheet" href="css/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl/owl.theme.default.min.css">
+    <title>NetMuzic - Clone Netflix</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+            <h2 class="logo">NETGOSPEL</h2>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Músicas</a></li>
+                <li><a href="#">Álbuns</a></li>
+                <li><a href="#">Letras</a></li>
+                <li><a href="#">Play-List</a></li>
+            </ul> 
+            </nav>
+            <nav class="btnSair">
+                <nav class="pesquisar">
+                    <a href="" id="search"><i class="fas fa-search"></i></a>
+                    <input type="text" name="pesquisar" id="" placeholder="Pesquisar" id="pesquisar">
+                </nav>
+                <nav class="notificacoes">
+                   <a href="#"><i class="fas fa-bell"></i></a> 
+                </nav>
+                <nav class="sair">
+                    <a href="#">
+                        <i class="fas fa-user-alt"></i>
+                    </a>
+                </nav>
+            </nav>  
+        </div>
+    </header>
+
+    <main class="banner">
+            <div class="container-banner">
+                <div class="slide">
+                    <img src="img/1.jpg" alt="" srcset="">
+                    <div class="content">
+                        <h3 class="titulo">Oração</h3>
+                        <p class="descricao">Foi na cruz, foi na cruz
+                            Em que ao fim percebi
+                            Meu pecado recaiu em Jesus
+                            Foi então, pela fé
+                            Que meus olhos abri
+                            Que prazer sinto agora em sua luz</p>
+                            <button type="button" class="botao"  >
+                                <i class="fas fa-play"></i>
+                                OUVIR AGORA
+                            </button>
+                            <div class="audio">
+                                <audio controls autoplay="autoplay">
+                                  <source src="musicas/DISCÍPULOS  ORAÇÃO.mp3" type="audio/mpeg">
+                              </audio>  
+                            </div>    
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="img/2.png" alt="" srcset="">
+                    <div class="content">
+                        <h3 class="titulo">NÃO MAIS EU</h3>
+                        <p class="descricao">Foi na cruz, foi na cruz
+                            Em que ao fim percebi
+                            Meu pecado recaiu em Jesus
+                            Foi então, pela fé
+                            Que meus olhos abri
+                            Que prazer sinto agora em sua luz</p>
+                            <button role="button" class="botao" onclick="playMusica()">
+                                <i class="fas fa-play"></i>
+                                OUVIR AGORA
+                            </button>
+                            <div class="audio">
+                                <audio controls>
+                                  <source src="musicas/ARTTRIO  O FILHO DO HOMEM.mp3" type="audio/mpeg">
+                              </audio>  
+                              </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="img/3.jpeg" alt="" srcset="">
+                    <div class="content">
+                        <h3 class="titulo">NÃO MAIS EU</h3>
+                        <p class="descricao">Foi na cruz, foi na cruz
+                            Em que ao fim percebi
+                            Meu pecado recaiu em Jesus
+                            Foi então, pela fé
+                            Que meus olhos abri
+                            Que prazer sinto agora em sua luz</p>
+                            <button role="button" class="botao">
+                                <i class="fas fa-play"></i>
+                                OUVIR AGORA
+                            </button>
+                            <div class="audio">
+                                <audio controls>
+                                  <source src="musicas/Ministério F4ces  Ele Me Amparou  Caixa de Música.mp3" type="audio/mpeg">
+                              </audio>  
+                            </div>  
+                    </div>
+                </div>
+
+                  <div class="slide">
+                    <img src="img/4.jpg" alt="" srcset="">
+                    <div class="content">
+                        <h3 class="titulo">NÃO MAIS EU</h3>
+                        <p class="descricao">Foi na cruz, foi na cruz
+                            Em que ao fim percebi
+                            Meu pecado recaiu em Jesus
+                            Foi então, pela fé
+                            Que meus olhos abri
+                            Que prazer sinto agora em sua luz</p>
+                            <button role="button" class="botao">
+                                <i class="fas fa-play"></i>
+                                OUVIR AGORA
+                            </button>
+                    </div>
+                </div>
+
+
+                <div class="slide">
+                    <img src="img/5.jpg" alt="" srcset="">
+                    <div class="content">
+                        <h3 class="titulo">NÃO MAIS EU</h3>
+                        <p class="descricao">Foi na cruz, foi na cruz
+                            Em que ao fim percebi
+                            Meu pecado recaiu em Jesus
+                            Foi então, pela fé
+                            Que meus olhos abri
+                            Que prazer sinto agora em sua luz</p>
+                            <button role="button" class="botao">
+                                <i class="fas fa-play"></i>
+                                OUVIR AGORA
+                            </button>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="img/6.jpg" alt="" srcset="">
+                    <div class="content">
+                        <h3 class="titulo">NÃO MAIS EU</h3>
+                        <p class="descricao">Foi na cruz, foi na cruz
+                            Em que ao fim percebi
+                            Meu pecado recaiu em Jesus
+                            Foi então, pela fé
+                            Que meus olhos abri
+                            Que prazer sinto agora em sua luz</p>
+                            <button role="button" class="botao">
+                                <i class="fas fa-play"></i>
+                                OUVIR AGORA
+                            </button>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="img/7.jpg" alt="" srcset="">
+                    <div class="content">
+                        <h3 class="titulo">NÃO MAIS EU</h3>
+                        <p class="descricao">Foi na cruz, foi na cruz
+                            Em que ao fim percebi
+                            Meu pecado recaiu em Jesus
+                            Foi então, pela fé
+                            Que meus olhos abri
+                            Que prazer sinto agora em sua luz</p>
+                            <button role="button" class="botao">
+                                <i class="fas fa-play"></i>
+                                OUVIR AGORA
+                            </button>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="img/8.jpg" alt="" srcset="">
+                    <div class="content">
+                        <h3 class="titulo">NÃO MAIS EU</h3>
+                        <p class="descricao">Foi na cruz, foi na cruz
+                            Em que ao fim percebi
+                            Meu pecado recaiu em Jesus
+                            Foi então, pela fé
+                            Que meus olhos abri
+                            Que prazer sinto agora em sua luz</p>
+                            <button role="button" class="botao">
+                                <i class="fas fa-play"></i>
+                                OUVIR AGORA
+                            </button>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="img/9.jpg" alt="" srcset="">
+                    <div class="content">
+                        <h3 class="titulo">NÃO MAIS EU</h3>
+                        <p class="descricao">Foi na cruz, foi na cruz
+                            Em que ao fim percebi
+                            Meu pecado recaiu em Jesus
+                            Foi então, pela fé
+                            Que meus olhos abri
+                            Que prazer sinto agora em sua luz</p>
+                            <button role="button" class="botao">
+                                <i class="fas fa-play"></i>
+                                OUVIR AGORA
+                            </button>
+                    </div>
+                </div>
+           
+            <div class="slide">
+                <img src="img/10.jpg" alt="" srcset="">
+                <div class="content">
+                    <h3 class="titulo">NÃO MAIS EU</h3>
+                    <p class="descricao">Foi na cruz, foi na cruz
+                        Em que ao fim percebi
+                        Meu pecado recaiu em Jesus
+                        Foi então, pela fé
+                        Que meus olhos abri
+                        Que prazer sinto agora em sua luz</p>
+                        <button role="button" class="botao">
+                            <i class="fas fa-play"></i>
+                            OUVIR AGORA
+                        </button>
+                </div>
+            </div>
+       
+        <div class="slide">
+            <img src="img/11.jpeg" alt="" srcset="">
+            <div class="content">
+                <h3 class="titulo">NÃO MAIS EU</h3>
+                <p class="descricao">Foi na cruz, foi na cruz
+                    Em que ao fim percebi
+                    Meu pecado recaiu em Jesus
+                    Foi então, pela fé
+                    Que meus olhos abri
+                    Que prazer sinto agora em sua luz</p>
+                    <button role="button" class="botao">
+                        <i class="fas fa-play"></i>
+                        OUVIR AGORA
+                    </button>
+            </div>
+        </div>
+    </div>
+        
+    </main>
+<!-- Carrossel 1 -->
+
+    <div class="carrosel">
+            <h1>Destaques</h1>
+            <!-- owl-carousel owl-theme -->
+        <div class="carousel">
+            <div class="smart">
+                <div class="item active">
+                    <img class="box-filme" src="img/1.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/2.png" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/3.jpeg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/4.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/5.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/6.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/7.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/8.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/9.jpg" alt="" srcset="">
+                </div>
+            </div>
+            
+                <div class="prev">< </div>
+                <div class="next">></div>
+           
+        </div>
+    </div>
+
+    <!-- carrrossell 2 -->
+    <div class="carrosel">
+        <h1>Novas</h1>
+        <!-- owl-carousel owl-theme -->
+    <div class="carousel">
+        <div class="smart">
+            <div class="item">
+                <img class="box-filme" src="img/10.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/11.jpeg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/12.jpeg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/14.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/15.jpeg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/16.jpeg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/16.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/17.jpeg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/14.jpg" alt="" srcset="">
+            </div>
+        </div>
+        
+            <div class="prev">< </div>
+            <div class="next">></div>
+       
+    </div>
+</div>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+    <script src="js/carossel/jquery.min.js"></script>
+    <script src="js/carossel/owl.carousel.min.js"></script>
+    <script src="js/carossel/setup.js"></script>
+
+    <script src="js/main.js"></script>
+        
+    </script>
+</body>
+</html>
